@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  border-radius: 0 0 1rem 1rem;
+  color: cornsilk;
+}
