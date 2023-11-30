@@ -1,4 +1,9 @@
 <div class="input-add-tasks">
-  <input type="text" [placeholder]="placeholder" class="input-text" />
+  <input
+    type="text"
+    [placeholder]="placeholder"
+    class="input-text"
+    [(ngModel)]="newTask"
+    (keyup.enter)="addTask()"
+  />
 </div>
-s

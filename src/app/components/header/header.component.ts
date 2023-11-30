@@ -9,5 +9,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  public title: string = 'My To-Do-List-Angular';
+  public title: string = 'My To-Do List';
 }

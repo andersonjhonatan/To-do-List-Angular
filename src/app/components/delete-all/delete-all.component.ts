@@ -8,6 +8,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './delete-all.component.html',
   styleUrl: './delete-all.component.css'
 })
-export class DeleteAllComponent {
-
-}
+export class DeleteAllComponent {}

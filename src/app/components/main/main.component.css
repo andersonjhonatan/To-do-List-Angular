@@ -4,8 +4,73 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
+  background-color: var(--back-layout);
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 img {
   margin: 3rem 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--back-layout);
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: 0;
+  border: 1px solid slateblue;
+}
+
+input,
+button {
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.checkbox:checked + input {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: var(--danger-color);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.6;
 }

@@ -1,0 +1,9 @@
+.delete-all {
+  background-color: var(--danger-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}

@@ -1,3 +1,29 @@
-<div class="main">
-  <img [src]="logo" width="300" height="300" [alt]="alt" />
-</div>
+<section class="main-container">
+  <div class="main">
+    <img
+      [src]="logo"
+      width="300"
+      height="300"
+      [alt]="alt"
+      *ngIf="!tasks.task.length"
+    />
+
+    <div *ngFor="let task of tasks.task; let i = index" class="task">
+      <section>
+        <input
+          type="checkbox"
+          [(ngModel)]="task.checked"
+          class="checkbox"
+          (click)="onCheckboxChange(i)"
+        />
+        <input type="text" [(ngModel)]="task.task" />
+      </section>
+      <button type="submit" (click)="deleteTask(i)">Deletar</button>
+    </div>
+
+    <app-input-add-tasks
+      (newTaskEmmitter)="setTaskEmmit($event)"
+    ></app-input-add-tasks>
+  </div>
+  <app-delete-all (click)="deleteAll()"></app-delete-all>
+</section>
